@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "GuessTheNumber_backend": {
+      "main": "src/GuessTheNumber_backend/main.mo",
+      "type": "motoko"
+    },
+    "GuessTheNumber_frontend": {
+      "dependencies": [
+        "GuessTheNumber_backend"
+      ],
+      "source": [
+        "src/GuessTheNumber_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "GuessTheNumber_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
